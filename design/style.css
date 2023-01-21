@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+}
+
+/* ---RESET--- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    /* max-width: 100%; */
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+a {
+    color: inherit;
+    text-decoration: unset;
+}
+
+
+
+
+/* LAYOUT */
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue: hsl(211, 68%, 94%);
+    --light-grayish-blue2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+
+}
+
+
+body {
+    font-family: "PlusJakartaSans", sans-serif;
+    background-color: var(--light-grayish-blue2);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: var(--very-dark-blue);
+
+}
+
+main {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    row-gap: 10px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.header h1 {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.number {
+    background-color: var(--blue);
+    color: white;
+    padding: 3px 12px;
+    border-radius: 25%;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+
+.mark-all:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.card {
+    border-radius: 5px;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.notification {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+
+}
+
+.user {
+    font-weight: 900;
+}
+
+.post {
+    color: var(--dark-grayish-blue);
+    font-weight: bold;
+
+}
+
+.user:hover,
+.post:hover {
+    color: var(--blue);
+}
+
+.time {
+    color: var(--grayish-blue);
+}
+
+.group {
+    font-weight: 900;
+    color: var(--blue);
+}
+
+.message {
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+
+.message:hover {
+    background-color: var(--light-grayish-blue);
+}
+
+.unread {
+    background-color: var(--very-light-grayish-blue);
+}
+.unread .notification p::after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 700px;
+        padding: 1rem 2rem;
+        border-radius: 2%;
+        margin: 3rem auto;
+    }
+}
