@@ -9,7 +9,6 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -35,3 +34,6 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
+## Author
+- Frontend Mentor - [@Gulzhub](https://www.frontendmentor.io/profile/Gulzhub)
+- Twitter - [@gulz4you](https://twitter.com/gulz4you)
